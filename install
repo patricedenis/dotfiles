@@ -1,9 +1,25 @@
 #! /bin/bash
 
-cp .bashrc ~/.bashrc
-cp .bash_aliases ~/.bash_aliases
-cp .bash_perso ~/.bash_perso
-cp .vimrc ~/.vimrc
+if [ -f ~/.bashrc ]; then
+  rm ~/.bashrc
+fi
+ln -s ~/.bashrc .bashrc
+
+if [ -f ~/.bash_aliases ]; then
+  rm ~/.bash_aliases 
+fi
+ln -s ~/.bash_aliases .bash_aliases
+
+if [ -f ~/.bash_perso ]; then
+  rm ~/.bash_perso
+fi
+ln -s ~/.bash_perso .bash_perso
+
+if [ -f ~/.vimrc ]; then
+  rm ~/.vimrc
+fi
+ln -s ~/.vimrc .vimrc
+
 
 source ~/.bashrc
 
