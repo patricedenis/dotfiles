@@ -1,0 +1,9 @@
+#! /bin/bash
+
+cp .bashrc ~/.bashrc
+cp .bash_aliases ~/.bash_aliases
+cp .bash_perso ~/.bash_perso
+cp .vimrc ~/.vimrc
+
+source ~/.bashrc
+

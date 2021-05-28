@@ -1,0 +1,33 @@
+# --
+# Title .bash_perso
+# Description : Define user's bash personnel preferences
+# Author : Patrice Denis
+# Date : May 2021
+# Licence : GPV-v3-or-later
+# --
+
+# User's bash functions
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/scripts" ] ; then
+    PATH="$HOME/scripts:$PATH"
+fi
+
+#export environnement variables
+export VISUAL=vim
+export EDITOR="$VISUAL"
+#to allow changing with 'cd' into the user's personnal directories from anywhere
+export CDPATH="/home/$USER"
+
+# Specific environnement for SIOP-PDE
+if [ -f ~/.bash_SIOP-PDE ]; then 
+  . ~/.bash_SIOP-PDE
+fi
+
