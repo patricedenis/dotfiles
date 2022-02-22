@@ -96,6 +96,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # User's bash personnalization
+# include .bash_function .bash_SIOP-PDE as other
 if [ -f ~/.bash_perso ]; then
     . ~/.bash_perso
 fi
