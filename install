@@ -15,6 +15,11 @@ if [ -f ~/.bash_perso ]; then
 fi
 ln -s ~/dotfiles/.bash_perso ~/.bash_perso
 
+if [ -f ~/.bash_siop-pde ]; then
+  rm ~/.bash_aliases 
+fi
+ln -s ~/dotfiles/.bash_siop-pde ~/.bash_siop-pde
+
 if [ -f ~/.vimrc ]; then
   rm ~/.vimrc
 fi
