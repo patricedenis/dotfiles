@@ -27,7 +27,7 @@ export EDITOR="$VISUAL"
 export CDPATH="/home/$USER"
 
 # Specific environnement for SIOP-PDE
-if [ -f ~/.bash_SIOP-PDE ]; then 
-  . ~/.bash_SIOP-PDE
+if [ -f ~/.bash_siop-pde ]; then 
+  . ~/.bash_siop-pde
 fi
 
