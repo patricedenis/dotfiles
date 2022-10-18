@@ -16,8 +16,9 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=9999
-HISTFILESIZE=9999
+#if non set, there is no limit to the history size
+#HISTSIZE=9999
+#HISTFILESIZE=9999
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -112,6 +113,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#
-
+#start the tmux init script to load the default configuration
+#if [ -f ~/scripts/stmux.sh ]; then
+#    ./scripts/stmux.sh
+#fi
 
